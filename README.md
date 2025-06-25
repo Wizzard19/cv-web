@@ -19,9 +19,37 @@ Crear un CV interactivo y responsivo que pueda compartir fácilmente con recluta
 - CSS3
 - (Opcional) JavaScript para interactividad básica
 
+📋 Contenido
+Información personal
+
+Experiencia laboral
+
+Educación
+
+Habilidades técnicas
+
+Proyectos destacados
+
+Contacto
+
+💡 Funcionalidades futuras (ideas)
+Modo oscuro
+
+Animaciones suaves
+
+Descarga en PDF del CV
+
+Formularios de contacto
+
+✍️ Autor
+Wizzard19 — LinkedIn
+GitHub
+
 ## 📦 Instalación y uso
 
 ```bash
 git clone https://github.com/Wizzard19/cv-web.git
 cd cv-web
 # Abrir index.html en el navegador
+
+
