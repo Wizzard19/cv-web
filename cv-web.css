@@ -1,3 +1,4 @@
+/* reset General */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   padding: 20px;
 }
 
+/* Layout principal */
 .contenidoPrincipal {
     max-width: 900px;
     margin: 0 auto;
@@ -40,24 +42,6 @@ section, aside {
     margin-bottom: 30px;
 }
 
-h3, h4 {
-    color: #2c3e50;
-    margin-left: 10px;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.jobExperience,
-academyForm {
-    flex: 2;
-}
-
-.abilities {
-    flex: 1;
-}
 
 footer {
   text-align: center;
@@ -73,4 +57,102 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+.mainColumn {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.abilities{
+  flex: 1;
+}
+/* Tipografía */
+h3, h4 {
+    color: #2c3e50;
+    margin-left: 10px;
+  }
+
+/* Listas */
+  ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.jobExperience,
+.academyForm {
+    flex: 2;
+}
+
+.abilities {
+    flex: 1;
+}
+
+
+/* Componentes por sección */
+.jobExperience, 
+.academyForm, 
+.abilities{
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenidoPrincipal {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+  .mainColumn,
+  .abilities {
+    width: 100%;
+  }
+}
+
+/* Espaciado entre ítems */
+li {
+  margin-bottom: 15px;
+}
+
+/* Títulos con más jerarquía visual */
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Hover en enlaces del footer */
+footer a:hover {
+  color: #004080;
+  transition: color 0.3s ease;
+}
+
+/* Más aire dentro de cada bloque */
+.jobExperience,
+.academyForm,
+.abilities {
+  padding: 20px;
+}
+
+.profilePic {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
