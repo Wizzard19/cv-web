@@ -49,6 +49,7 @@ footer {
   color: #666;
   margin-top: 40px;
   padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #ddd;
 }
 footer a {
@@ -100,6 +101,7 @@ h3, h4 {
     padding: 10px;
 }
 
+/* mediaqueries */
 @media screen and (max-width: 768px) {
   .contenidoPrincipal {
     flex-direction: column;
@@ -116,6 +118,10 @@ h3, h4 {
   .mainColumn,
   .abilities {
     width: 100%;
+  }
+
+  .abilities{
+    text-align: center;
   }
 }
 
